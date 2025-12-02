@@ -18,7 +18,7 @@ export const auth = getAuth(app);
 export const functions = getFunctions(app);
 
 
-//maschera che mostra apiKey
-const apiKey = firebaseConfig.apiKey;
-const masked = apiKey ? `${apiKey.slice(0,4)}...${apiKey.slice(-4)}` : "MISSING";
-console.info("Firebase API key (masked):", masked);
+//SOLO per testare se apiKey è corretta (appare nella console del browser)
+//const apiKey = firebaseConfig.apiKey;
+//const masked = apiKey ? `${apiKey.slice(0,4)}...${apiKey.slice(-4)}` : "MISSING";
+//console.info("Firebase API key (masked):", masked);
