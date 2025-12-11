@@ -1,18 +1,27 @@
 {
-  "name": "nel-grimorio-app2",
-  "version": "0.1.0",
+  "name": "nel-grimorio-companion-app-cld",
   "private": true,
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "chmod +x node_modules/.bin/vite && vite build",
+    "preview": "vite preview",
+    "vercel-build": "npm ci && npm run build"
   },
   "dependencies": {
-    "firebase": "^9.23.0",
+    "firebase": "^10.7.1",
+    "lucide-react": "^0.294.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.67.0",
+    "react-router-dom": "^7.10.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
